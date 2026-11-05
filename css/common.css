@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+/* reset *****************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+nav a {
+  color: #fff;
+}
+
+/* End of reset *****************************************/
+/* common *****************************************/
+
+body {
+  font-family: "Noto Sans JP", "MS PMincho", "ＭＳ Ｐ明朝", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* header *****************************************/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+  .inner {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .logo {
+      width: 205px;
+    }
+    p {
+      font-size: 24px;
+      padding-bottom: 5px;
+    }
+  }
+}
+/* nav *****************************************/
+nav {
+  background-color: #333;
+  font-weight: 300;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  ul {
+    padding: 0 30px;
+    width: 1200px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      font-size: 20px;
+      flex: 1;
+      text-align: center;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+
+      a {
+        display: block;
+        width: 100%;
+        transition: 0.2s;
+      }
+    }
+    li:first-child {
+      margin-right: -1px;
+    }
+    li:last-child {
+      margin-left: -1px;
+    }
+  }
+}
+
+nav a:hover {
+  opacity: 0.7;
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+/* footer *****************************************/
+
+footer {
+  position: relative;
+  .inner {
+    border-top: 1px solid #333;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .text {
+      font-size: 20px;
+      font-family: serif;
+      font-weight: bold;
+    }
+  }
+}
+
+/* totop */
+#top {
+  scroll-margin-top: 100px;
+}
+
+.totop {
+  width: 64px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.totop:hover {
+  filter: invert(100%);
+  transition: filter 0.3s ease;
+}
+
+/*  *****************************************/
+main {
+  margin-top: 100px;
+}
+/* h2 *****************************************/
+
+h2 {
+  margin-bottom: 100px;
+  font-weight: 500;
+  /* width: fit-content; */
+  font-size: 48px;
+  text-align: center;
+  /* border-bottom: #333 solid 1px; */
+  text-decoration: underline;
+  text-decoration-color: #333;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  span {
+    text-decoration-thickness: 1.5px;
+    display: block;
+    font-size: 16px;
+  }
+}
+
+/* tag *****************************************/
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 5px;
+  .tag {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #4e4e4e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: serif;
+  }
+}
+
+/*  *****************************************/
