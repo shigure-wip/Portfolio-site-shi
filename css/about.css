@@ -13,8 +13,8 @@
 .page-link {
   padding-left: 20px;
   margin-bottom: 20px;
-  position: sticky;
-  bottom: 30px;
+  position: fixed;
+  bottom: 70px;
   left: 0;
   li {
     margin-bottom: 10px;
@@ -109,5 +109,69 @@
     display: block;
     width: 180px;
     height: 222px;
+  }
+}
+
+/* more */
+
+#more {
+  margin-bottom: 120px;
+  padding: 0px 120px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .more-text {
+      width: 450px;
+      margin: auto 0;
+    }
+    .more-img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+.more-container-x {
+  flex-direction: row-reverse;
+}
+
+/* skill */
+#skill {
+  padding: 0px 60px;
+}
+.skill-list {
+  li {
+    background-color: #fff;
+    width: 100%;
+    /* height: 160px; */
+    padding: 30px;
+    border: 1px solid #333;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .img {
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+    }
+    .skill-text {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        font-size: 28px;
+        line-height: 1.2;
+      }
+    }
   }
 }

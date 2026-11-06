@@ -190,3 +190,28 @@ h2 {
 }
 
 /*  *****************************************/
+.works-link {
+  padding-top: 100px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  ul {
+    display: flex;
+    justify-content: center;
+    height: 16px;
+    li {
+      padding: 0 16px;
+      border-right: #333 1px solid;
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        transition: 0.4s;
+
+        &:hover {
+          letter-spacing: 0.2em;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}
