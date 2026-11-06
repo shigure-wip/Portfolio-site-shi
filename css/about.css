@@ -1,12 +1,43 @@
 @charset "utf-8";
 
+[id] {
+  scroll-margin-top: 90px;
+}
+
 .wrap {
-  padding-top: 130px;
   margin-bottom: 150px;
+}
+
+/* page-link */
+
+.page-link {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  position: sticky;
+  bottom: 30px;
+  left: 0;
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    /* display: block; */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+    letter-spacing: 0.1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      letter-spacing: 0.2em;
+      transition: 0.3s;
+    }
+  }
 }
 
 /* main-visual */
 .main-visual {
+  height: calc(100vh - 100px);
   margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
@@ -29,5 +60,54 @@
       font-size: 24px;
       text-align: left;
     }
+  }
+}
+
+/* plofile */
+#plofile {
+  margin-bottom: 120px;
+}
+
+.plofile-content {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  div,
+  dl {
+    flex: 1;
+  }
+  dl {
+    font-size: 20px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      dt {
+        border-right: 2px solid #333;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.plofile-img {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-left: 20px;
+  img:last-child {
+    align-self: flex-end;
+  }
+  img {
+    display: block;
+    width: 180px;
+    height: 222px;
   }
 }
