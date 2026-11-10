@@ -30,6 +30,9 @@ nav a {
 
 /* End of reset *****************************************/
 /* common *****************************************/
+[id] {
+  scroll-margin-top: 90px;
+}
 
 body {
   font-family: "Noto Sans JP", "MS PMincho", "ＭＳ Ｐ明朝", sans-serif;
@@ -212,6 +215,33 @@ h2 {
           transition: 0.4s;
         }
       }
+    }
+  }
+}
+
+/* page-link */
+
+.page-link {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: 70px;
+  left: 0;
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    /* display: block; */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+    letter-spacing: 0.1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      letter-spacing: 0.2em;
+      transition: 0.3s;
     }
   }
 }

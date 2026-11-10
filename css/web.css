@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* h1 */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  span {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+.main-visual {
+  width: 100%;
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+.works-link {
+  ul {
+    li:last-child {
+      text-decoration: underline;
+    }
+  }
+}
+
+/*  */
+
+.web-grid {
+  padding: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  .item-img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: none;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  p {
+    padding-left: 20px;
+  }
+  a {
+    opacity: 1;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.4s;
+    }
+  }
+}
+
+/* business card */
+
+.web-container {
+  margin-bottom: 60px;
+  .web-content {
+    padding: 30px;
+    border: 2px dashed #888;
+    .web-img {
+      padding: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        display: block;
+        width: 382px;
+        height: 230px;
+        object-fit: cover;
+      }
+      .web-imgtext {
+        width: 380px;
+        h2 {
+          font-size: 24px;
+          font-weight: 500;
+          border-bottom: none;
+          text-align: left;
+          text-decoration: none;
+        }
+        a {
+          display: block;
+          text-decoration: underline;
+          color: #666;
+          /* padding-left: 2em; */
+          text-align: right;
+          width: 100%;
+          &:hover {
+            letter-spacing: 0.2em;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+
+    .tag-container {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .text-sec {
+      margin-bottom: 24px;
+      h3 {
+        border-bottom: 1px solid #888;
+        margin-bottom: 5px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      p {
+        padding-left: 1em;
+        text-align: justify;
+      }
+    }
+  }
+}
