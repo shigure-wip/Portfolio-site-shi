@@ -47,6 +47,7 @@ main {
       img {
         display: block;
         width: 174px;
+        height: 174px;
         object-fit: contain;
       }
     }
@@ -108,6 +109,38 @@ main {
       p {
         padding-left: 1em;
         text-align: justify;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #logo {
+    margin-bottom: 132px;
+  }
+  .logo-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    .logo-content {
+      .logo-img {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+      }
+    }
+  }
+
+  .business-container {
+    .business-content {
+      .business-img {
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 20px;
+        img {
+          width: 90%;
+        }
       }
     }
   }

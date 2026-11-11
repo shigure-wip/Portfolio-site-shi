@@ -45,7 +45,7 @@
 
 /* about */
 #about {
-  margin-bottom: 120px;
+  margin-bottom: 180px;
   .tag-container {
     justify-content: flex-end;
   }
@@ -134,17 +134,18 @@
         display: grid;
         place-items: center;
         mix-blend-mode: difference;
-        background-color: #ffffff00;
+        background-color: #000000a0;
         transition: 0.3s;
         &::before {
           content: attr(data-hover);
+          padding: 20px;
           position: absolute;
           color: transparent;
           transition: 0.3s;
         }
       }
       a:hover {
-        background-color: #ffffffcd;
+        background-color: #ffffff;
         color: transparent;
         transition: 0.3s;
         &::before {
@@ -160,4 +161,41 @@
 }
 .to-web {
   background: url(../img/web.png) no-repeat right / cover;
+}
+
+@media (max-width: 767px) {
+  .main-visual-text {
+    h1 {
+      font-size: 48px;
+      span {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .about-content {
+    display: block;
+    padding: 0px 36px;
+    .plofile-img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 24px;
+      margin-left: auto;
+      border-radius: 25%;
+    }
+  }
+
+  #works {
+    .works-content {
+      gap: 16px;
+      padding: 0px 28px;
+      div {
+        height: 320px;
+        font-weight: 600;
+      }
+    }
+  }
 }
