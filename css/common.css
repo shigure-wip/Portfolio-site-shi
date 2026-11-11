@@ -53,7 +53,7 @@ header {
   background-color: #fff;
   width: 100%;
   .inner {
-    width: 1200px;
+    max-width: 1200px;
     height: 50px;
     margin: 0 auto;
     display: flex;
@@ -78,12 +78,14 @@ nav {
   place-items: center;
   ul {
     padding: 0 30px;
-    width: 1200px;
+    /* width: 1200px; */
+    width: clamp(400px, 100%, 1200px);
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     li {
+      width: auto;
       font-size: 20px;
       flex: 1;
       text-align: center;
@@ -108,7 +110,11 @@ nav {
 nav a:hover {
   opacity: 0.7;
   font-size: 26px;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+
+*:hover {
+  transition-timing-function: ease-in-out;
 }
 
 /* footer *****************************************/
@@ -117,7 +123,7 @@ footer {
   position: relative;
   .inner {
     border-top: 1px solid #333;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100px;
     padding-bottom: 10px;
@@ -196,7 +202,7 @@ h2 {
 .works-link {
   padding-top: 100px;
   margin-bottom: 60px;
-  font-size: 14px;
+  font-size: 16px;
   ul {
     display: flex;
     justify-content: center;
